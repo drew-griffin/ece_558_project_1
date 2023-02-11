@@ -9,5 +9,7 @@
     <string name="multiply_label">X</string>
     <string name="divide_label">÷</string>
     <string name="square_root_label">√</string>
+    <string name="divide_by_zero">Cannot Divide By 0</string>
+    <string name="invalid_operation">Invalid Operation</string>
     <string name="percent_label">%</string>
 </resources>

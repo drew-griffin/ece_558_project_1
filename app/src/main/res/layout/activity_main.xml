@@ -4,25 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:background="@color/black"
-    >
+    tools:context=".MainActivity">
 
 
-    <EditText
-        android:id="@+id/operand_2"
-        android:layout_width="107dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="20dp"
-        android:ems="10"
-        android:hint="@string/op2_label"
-        android:inputType="numberSigned|numberDecimal"
-        android:textColorHint="@color/white"
-        android:text=""
-        android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/equals"
-        app:layout_constraintStart_toEndOf="@+id/operation_display" />
+
 
     <TextView
         android:id="@+id/equals"
@@ -31,9 +17,9 @@
         android:layout_marginBottom="10dp"
         android:text="@string/result_label"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold|italic"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/final_result"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -42,9 +28,10 @@
     <Button
         android:id="@+id/plus_button"
         android:layout_width="319dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="10dp"
         android:text="@string/plus_label"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/minus_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -53,9 +40,10 @@
     <Button
         android:id="@+id/clear_button"
         android:layout_width="319dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="10dp"
         android:text="@string/clear_label"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/plus_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -64,9 +52,10 @@
     <Button
         android:id="@+id/divide_button"
         android:layout_width="319dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="10dp"
         android:text="@string/divide_label"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/percent_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -75,9 +64,10 @@
     <Button
         android:id="@+id/minus_button"
         android:layout_width="319dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="10dp"
         android:text="@string/minus_label"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/multiply_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -86,9 +76,10 @@
     <Button
         android:id="@+id/percent_button"
         android:layout_width="319dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="10dp"
         android:text="@string/percent_label"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/square_root_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -97,9 +88,10 @@
     <Button
         android:id="@+id/square_root_button"
         android:layout_width="319dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="10dp"
         android:text="@string/square_root_label"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -108,9 +100,10 @@
     <Button
         android:id="@+id/multiply_button"
         android:layout_width="319dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="10dp"
         android:text="@string/multiply_label"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/divide_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -118,45 +111,72 @@
 
     <TextView
         android:id="@+id/final_result"
-        android:layout_width="114dp"
-        android:layout_height="32dp"
+        android:layout_width="116dp"
+        android:layout_height="40dp"
         android:layout_marginBottom="20dp"
         android:text=""
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/clear_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text = "500"/>
+        tools:text="500" />
 
 
     <TextView
         android:id="@+id/operation_display"
-        android:layout_width="82dp"
-        android:layout_height="36dp"
+        android:layout_width="63dp"
+        android:layout_height="42dp"
         android:layout_marginBottom="20dp"
         android:text=""
         android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/equals"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="+" />
 
     <EditText
         android:id="@+id/operand_1"
         android:layout_width="109dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="15dp"
         android:ems="10"
         android:hint="@string/op1_label"
-        android:textColorHint="@color/white"
         android:inputType="numberSigned|numberDecimal"
         android:text=""
-        android:textSize="15sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:imeOptions="actionNext"
         app:layout_constraintBottom_toTopOf="@+id/equals"
         app:layout_constraintEnd_toStartOf="@+id/operation_display" />
+
+    <EditText
+        android:id="@+id/operand_2"
+        android:layout_width="117dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="@string/op2_label"
+        android:inputType="numberSigned|numberDecimal"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:imeOptions="actionDone"
+        app:layout_constraintBottom_toTopOf="@+id/equals"
+        app:layout_constraintStart_toEndOf="@+id/operation_display" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
