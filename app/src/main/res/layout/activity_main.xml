@@ -156,7 +156,7 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="20sp"
-        android:imeOptions="actionNext"
+        android:imeOptions="actionDone"
         app:layout_constraintBottom_toTopOf="@+id/equals"
         app:layout_constraintEnd_toStartOf="@+id/operation_display" />
 

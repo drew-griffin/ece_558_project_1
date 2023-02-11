@@ -120,6 +120,7 @@ class MainActivity : AppCompatActivity() {
             binding.operand2.setHint(R.string.op2_label)
             binding.finalResult.text = ""
             binding.operationDisplay.text = ""
+            binding.operand1.requestFocus()
         }
         //plus button is tapped
         binding.plusButton.setOnClickListener {
