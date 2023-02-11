@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ece_558_project_1</string>
+    <string name="result_label">EQUALS</string>
+    <string name="op1_label">OPERAND 1</string>
+    <string name="op2_label">OPERAND 2</string>
+    <string name="clear_label">CLEAR</string>
+    <string name="plus_label">+</string>
+    <string name="minus_label">-</string>
+    <string name="multiply_label">X</string>
+    <string name="divide_label">÷</string>
+    <string name="square_root_label">√</string>
+    <string name="percent_label">%</string>
 </resources>
